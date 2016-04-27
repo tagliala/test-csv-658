@@ -1,0 +1,8 @@
+<%= form_for(@post, validate: true) do |f| %>
+  <%= f.text_field :name %>
+  <%= f.check_box :confirm, validate: false %>
+
+  <div class="form-actions">
+    <%= f.submit %>
+  </div>
+<% end %>
